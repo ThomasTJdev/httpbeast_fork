@@ -1,3 +1,8 @@
+# FORK OF HTTPBEAST
+
+This repo with httpbeast is updated to work with Nim version 2.0
+
+
 # httpbeast
 
 A highly performant, multi-threaded HTTP 1.1 server written in Nim.
