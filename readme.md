@@ -6,6 +6,19 @@ A fork of `httpbeast` updated to work with Nim version 2.0. Package has been ren
 * Package not being tagged (new versions not available)
 * Full support for Nim 2.0
 
+**Jester & httpbeast:**
+* This package can be used with the original [`jester`](https://github.com/dom96/jester/tree/master) package, but it is
+  recommended to use the fork [`jesterfork`](https://github.com/ThomasTJdev/jester_fork) instead.
+
+**Breaking changes / Info:**
+* Package renamed to `httpbeastfork` from version 1.0.0. Previous versions
+  (tags) uses the original package name `httpbeast`.
+* The previous tag, `v0.4.2`, includes the needed fixes to allow the
+  original `jester` package to work with Nim 2.0.
+* This fork is a spin-off of the original `httpbeast` package `v0.4.0`.
+  The original package is still available but does not support Nim 2.0.
+* Nim support bumped to `>= 1.4.8`
+
 # httpbeastfork
 
 A highly performant, multi-threaded HTTP 1.1 server written in Nim.

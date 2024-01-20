@@ -1,15 +1,15 @@
 # Package
 
-version       = "0.4.2"
+version       = "1.0.0"
 author        = "Dominik Picheta"
-description   = "A super-fast epoll-backed and parallel HTTP server."
+description   = "A super-fast epoll-backed and parallel HTTP server [FORK for nim v2.x.x]"
 license       = "MIT"
 
 srcDir = "src"
 
 # Dependencies
 
-requires "nim >= 0.18.0"
+requires "nim >= 1.4.8"
 
 # Test dependencies
 requires "asynctools#0e6bdc3ed5bae8c7cc9"
