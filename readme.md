@@ -1,12 +1,12 @@
 # FORK OF HTTPBEAST
 
-This repo with httpbeast is updated to work with Nim version 2.0
+A fork of `httpbeast` updated to work with Nim version 2.0. Package has been renamed to `httpbeastfork`.
 
 **Reason:**
 * Package not being tagged (new versions not available)
 * Full support for Nim 2.0
 
-# httpbeast
+# httpbeastfork
 
 A highly performant, multi-threaded HTTP 1.1 server written in Nim.
 
@@ -49,7 +49,7 @@ bin           = @["helloHttp"]
 # Dependencies
 
 requires "nim >= 1.0.0"
-requires "httpbeast >= 0.4.0"
+requires "httpbeastfork >= 0.4.0"
 ```
 
 Create a `src/helloHttp.nim` file:
@@ -57,7 +57,7 @@ Create a `src/helloHttp.nim` file:
 ```nim
 import options, asyncdispatch
 
-import httpbeast
+import httpbeastfork
 
 proc onRequest(req: Request): Future[void] =
   if req.httpMethod == some(HttpGet):

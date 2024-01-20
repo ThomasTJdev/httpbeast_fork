@@ -2,7 +2,7 @@
 
 import options, asyncdispatch, random
 
-import httpbeast
+import httpbeastfork
 
 proc onRequest(req: Request): Future[void] =
   var res = newFuture[void]()

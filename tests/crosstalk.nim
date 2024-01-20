@@ -1,6 +1,6 @@
 import options, asyncdispatch, nativesockets, strutils
 
-import httpbeast
+import httpbeastfork
 
 proc nonAwaitedDelayedSend(req: Request, id: string) {.async.} =
   await sleepAsync(10_000)

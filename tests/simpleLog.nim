@@ -1,7 +1,7 @@
 import logging
 import options, asyncdispatch
 
-import .. / src / httpbeast
+import .. / src / httpbeastfork
 
 
 let logFile = open("tests/logFile.tmp", fmWrite)
