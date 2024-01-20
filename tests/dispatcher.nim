@@ -1,6 +1,6 @@
 import options, asyncdispatch, httpclient
 
-import httpbeast
+import httpbeastfork
 
 proc onRequest(req: Request) {.async.} =
   if req.httpMethod == some(HttpGet):

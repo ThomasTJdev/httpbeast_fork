@@ -15,7 +15,7 @@ import times # TODO this shouldn't be required. Nim bug?
 
 export httpcore
 
-import httpbeast/parser
+import httpbeastfork/parser
 
 type
   FdKind = enum
@@ -516,11 +516,11 @@ proc id*(req: Request): uint =
   req.requestID
 
 proc forget*(req: Request) =
-  ## Unregisters the underlying request's client socket from httpbeast's
+  ## Unregisters the underlying request's client socket from httpbeastfork's
   ## event loop.
   ##
   ## This is useful when you want to register ``req.client`` in your own
-  ## event loop, for example when wanting to integrate httpbeast into a
+  ## event loop, for example when wanting to integrate httpbeastfork into a
   ## websocket library.
   assert req.selector.getData(req.client).requestID == req.requestID
   req.selector.unregister(req.client)
@@ -585,7 +585,7 @@ proc run*(onRequest: OnRequest) {.inline.} =
 
 when false:
   proc close*(port: Port) =
-    ## Closes an httpbeast server that is running on the specified port.
+    ## Closes an httpbeastfork server that is running on the specified port.
     ##
     ## **NOTE:** This is not yet implemented.
 

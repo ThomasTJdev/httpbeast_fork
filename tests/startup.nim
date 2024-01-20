@@ -1,5 +1,5 @@
 import os, options, asyncdispatch, parsecfg, strutils, streams
-import httpbeast
+import httpbeastfork
 
 const CurDir = currentSourcePath.parentDir
 
