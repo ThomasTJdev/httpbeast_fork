@@ -2,6 +2,9 @@
 
 This repo with httpbeast is updated to work with Nim version 2.0
 
+**Reason:**
+* Package not being tagged (new versions not available)
+* Full support for Nim 2.0
 
 # httpbeast
 
